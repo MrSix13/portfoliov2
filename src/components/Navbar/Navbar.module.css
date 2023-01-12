@@ -1,0 +1,98 @@
+.header{
+    width: 100vw;
+    height: 4em;
+    background-color: white;
+    display: flex;
+    position: relative;
+    justify-content: space-around;
+}
+
+.navbar{
+    background-color: white;
+    width: 80vw;
+    margin-top: 5em;
+    border-radius: 20px;
+    height: 40vh;
+    display: flex;
+    position: absolute;
+    justify-content: space-around;
+    flex: 4;
+    opacity: 1;
+    -webkit-box-shadow: 11px 13px 5px 0px rgba(0,0,0,0.33);
+    -moz-box-shadow: 11px 13px 5px 0px rgba(0,0,0,0.33);
+    box-shadow: 11px 13px 5px 0px rgba(0,0,0,0.33);
+    animation: navbar 2s alternate;
+    overflow: hidden;
+    z-index: 3;
+    
+}
+.navbar_grow{
+    background-color: white;
+    width: 80vw;
+    margin-top: 5em;
+    border-radius: 20px;
+    height: 50vh;
+    display: flex;
+    position: absolute;
+    justify-content: space-around;
+    flex: 4;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-box-shadow: 11px 13px 5px 0px rgba(0,0,0,0.33);
+    -moz-box-shadow: 11px 13px 5px 0px rgba(0,0,0,0.33);
+    box-shadow: 11px 13px 5px 0px rgba(0,0,0,0.33);
+    animation: navbargrow 2s alternate;
+    transition: all 2s;
+    z-index: 3;
+}
+
+.logo{
+    flex: 17;
+}
+
+.header ul {
+    list-style: none;
+}
+
+.header ul li a {
+    display: flex;
+    text-align: center;
+    border-bottom: 1px solid black;
+    margin-top:40px;
+    padding: 10px;
+
+    width: 18em
+}
+.icons{
+    background-color: rgb(121, 121, 190);  
+    font-size: 2.7em;
+    padding: 10px;
+    justify-content: space-evenly;
+    display: flex; 
+    flex: 2;
+}
+.button_menu{
+    color: white;
+
+}
+
+@keyframes navbar{
+    0%{
+        height: 0vh;
+    }
+    100%{
+        height: 40vh;
+    }
+}
+
+@keyframes navbargrow{
+    0%{
+        height: 40vh;
+    }
+    100%{
+        height: 0vh;
+        transform: translateY(-1000px);
+
+    }
+}
+
