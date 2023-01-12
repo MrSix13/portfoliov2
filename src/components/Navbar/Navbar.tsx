@@ -1,5 +1,6 @@
 import React, { FC, useState } from 'react'
 import { FaMoon,FaBars } from 'react-icons/fa';
+import { RxCross2 } from "react-icons/rx";
 import styles from './Navbar.module.css'
 
 const Navbar:FC = () => {
@@ -21,10 +22,17 @@ const Navbar:FC = () => {
         </nav>
         <div className={styles.icons}>
             <FaMoon/>
-            <FaBars 
-              onClick={()=>setToggle(!toggle)} 
-              className={styles.button_menu}
-            />
+            {toggle ? (
+                <RxCross2 
+                onClick={()=>setToggle(!toggle)} 
+                className={styles.button_menu}
+                />
+            ) : (
+                <FaBars 
+                    onClick={()=>setToggle(!toggle)} 
+                    className={styles.button_menu}
+                />
+            )}
         </div>
     </header>
   )

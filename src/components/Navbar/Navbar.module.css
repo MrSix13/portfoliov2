@@ -64,12 +64,14 @@
     width: 18em
 }
 .icons{
-    background-color:#004557;
     font-size: 2em;
     padding: 10px;
     justify-content: space-evenly;
     display: flex; 
     flex: 2;
+}
+.icons svg{
+    color: #004557;
 }
 .button_menu{
     color: white;
