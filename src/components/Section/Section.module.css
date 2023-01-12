@@ -9,11 +9,11 @@
 
 .section_left{
     flex: 1;
-    background-color: rgb(157, 160, 251);
+    background-color: #004557;
 }
 .section_rigth{
     flex: 1;
-    background-color: white;
+    background-color: rgb(215, 215, 215);
 }
 
 .section_hero{
@@ -21,13 +21,14 @@
     width: 90vw;
     height: 50vh;
     left: 20px;
+    color: #0e262e;
     top: 40px;
         /* From https://css.glass */
     background: rgba(255, 255, 255, 0.13);
     border-radius: 16px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.281);
-    backdrop-filter: blur(6.1px);
-    -webkit-backdrop-filter: blur(6.1px);
+    backdrop-filter: blur(9px);
+    -webkit-backdrop-filter: blur(9px);
     border: 1px solid rgba(255, 255, 255, 0.2);
     border-top-left-radius: 100px 100px;
     border-bottom-right-radius:100px 100px ;
@@ -39,10 +40,11 @@
     margin-top: 2.5em;
     border: 15px solid white;
     border-radius: 100%;
+    width: 16em;
 }
 
 .section_hero button{
-    background-color: rgb(125, 127, 222);
+    background-color: #0F4557;
     width: 14em;
     height: 3em;
     color: rgb(255, 255, 255);

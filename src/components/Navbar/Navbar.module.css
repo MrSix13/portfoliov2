@@ -64,8 +64,8 @@
     width: 18em
 }
 .icons{
-    background-color: rgb(121, 121, 190);  
-    font-size: 2.7em;
+    background-color:#004557;
+    font-size: 2em;
     padding: 10px;
     justify-content: space-evenly;
     display: flex; 
