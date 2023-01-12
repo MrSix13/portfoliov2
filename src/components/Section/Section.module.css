@@ -1,0 +1,52 @@
+.section_container{
+    background-color: red;
+    justify-content: space-between;
+    width: 100vw;
+    display: flex;
+    height: 60vh;
+    position: relative;
+}
+
+.section_left{
+    flex: 1;
+    background-color: rgb(157, 160, 251);
+}
+.section_rigth{
+    flex: 1;
+    background-color: white;
+}
+
+.section_hero{
+    position: absolute;
+    width: 90vw;
+    height: 50vh;
+    left: 20px;
+    top: 40px;
+        /* From https://css.glass */
+    background: rgba(255, 255, 255, 0.13);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.281);
+    backdrop-filter: blur(6.1px);
+    -webkit-backdrop-filter: blur(6.1px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-top-left-radius: 100px 100px;
+    border-bottom-right-radius:100px 100px ;
+    z-index: 1;
+    text-align: center;
+}
+
+.section_hero img{
+    margin-top: 2.5em;
+    border: 15px solid white;
+    border-radius: 100%;
+}
+
+.section_hero button{
+    background-color: rgb(125, 127, 222);
+    width: 14em;
+    height: 3em;
+    color: rgb(255, 255, 255);
+    margin-top: 15px;
+    border-radius: 15px;
+    
+}
