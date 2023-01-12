@@ -1,6 +1,6 @@
 import React, { FC, useState } from 'react'
 import { FaMoon,FaBars } from 'react-icons/fa';
-import styles from './styles/Navbar.module.css'
+import styles from './Navbar.module.css'
 
 const Navbar:FC = () => {
     const [toggle, setToggle] = useState(false)
